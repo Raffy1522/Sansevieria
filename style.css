@@ -1,6 +1,7 @@
 /* importing google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Port+Lligat+Slab&display=swap');
 
+@media only screen and (max-width: 360px ){
 
 *{
     margin: 0;
