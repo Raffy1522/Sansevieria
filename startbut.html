@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sansevieria Collection">
+<meta http-equiv="refresh" content="30">
+<link rel="icon" type="image/jpg" href="flavicon.jpg">
+<meta name="author" content="Jhuan Raphael Garcia Sugay">
+  <title>WELCOME TO SANSEVIERIA</title>
+  <body>
+    <section>
+    <h1 style=color:aliceblue>LET'S HAVE FUN!</h1>
+    <p style=color:beige>This page is create for you, to have fun, to relieved your stress<br>or something else.
+    after exploring this webpage you can click any of</br> the button below the header to explore more about our website/online shop.</p>
+    </section>
+    <div class="menu">
+      <ul>
+          <li><a href="homepage.html">HOME</a></li>
+
+          <li><a href="product.html">PRODUCT</a></li>
+
+          <li><a href="owner.html">OWNER</a></li>
+          
+          <li><a href="about.html">ABOUT</a></li>
+      </ul>
+  </div>
+  
+  <section>
+  <style>
+    .menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+    color: #e5e9df;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #a05208;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #7d6d60;
+}
+  </style>
+  </body>
+</section>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #242a49;
+      height: 100vh;
+      display: flex;
+      justify-content: center;  
+      align-items: center;
+      overflow: hidden;
+      flex-direction: column;
+    }
+
+    .plant {
+      position: relative;
+      width: 10px;
+      height: 100px;
+      background-color: #32cd32;
+      border-radius: 5px;
+      animation: grow 6s ease-in-out infinite;
+    }
+
+    .leaf {
+      position: absolute;
+      width: 40px;
+      height: 20px;
+      background-color: #32cd32;
+      border-radius: 10px;
+      top: -10px;
+      left: -15px;
+      opacity: 0;
+      animation: leafGlow 3s ease-in-out infinite, leafMovement 5s ease-in-out infinite;
+    }
+
+    .leaf::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 20px;
+      background-color: #32cd32;
+      border-radius: 10px;
+      top: 10px;
+      left: -15px;
+      opacity: 0;
+      animation: leafGlow 3s ease-in-out infinite, leafMovement 5s ease-in-out infinite;
+    }
+
+    @keyframes grow {
+      0% {
+        height: 100px;
+      }
+      50% {
+        height: 300px;
+      }
+      100% {
+        height: 100px;
+      }
+    }
+
+    @keyframes leafGlow {
+      0%, 100% {
+        opacity: 0.6;
+        box-shadow: 0 0 10px #32cd32, 0 0 20px #32cd32;
+      }
+      50% {
+        opacity: 1;
+        box-shadow: 0 0 30px #32cd32, 0 0 60px #32cd32;
+      }
+    }
+
+    @keyframes leafMovement {
+      0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(10deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      75% {
+        transform: rotate(-10deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+    .button {
+      position: absolute;
+      bottom: 30px;
+      background-color: #32cd32;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background-color: #228b22;
+    }
+
+    /* New Pop-up Text Style */
+    .popup-text {
+      color: white;
+      font-size: 24px;
+      opacity: 0;
+      transition: opacity 1s ease;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .popup-text.show {
+      opacity: 1;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="plant">
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+  </div>
+  <button class="button">Grow/Stop</button>
+
+  
+  <button class="button" id="clickMeButton">HERE!</button>
+  
+  
+  <div class="popup-text" id="popupText">You're here! so I know why are you here, because<br> 
+  you are so stress finding the best plant shop for your house. You're in the right place!<br>
+  What are you waiting for? start exploring now before it get out of stock!
+  </div>
+
+  <script>
+    const plant = document.querySelector('.plant');
+    const button = document.querySelector('.button');
+    const clickMeButton = document.getElementById('clickMeButton');
+    const popupText = document.getElementById('popupText');
+
+    let growing = true;
+
+    button.addEventListener('click', () => {
+      if (growing) {
+        plant.style.animationPlayState = 'paused';
+      } else {
+        plant.style.animationPlayState = 'running';
+      }
+      growing = !growing;
+    });
+
+    // Show pop-up text when "Click Me" button is clicked
+    clickMeButton.addEventListener('click', () => {
+      popupText.classList.toggle('show');
+    });
+  </script>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"  content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Plant Shop">
+<meta http-equiv="refresh" content="30">
+<meta name="author" content="Jhuan Raphael Garcia Sugay">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+<link rel="icon" type="image/jpg" href="flavicon.jpg">
+
+   
+<title>Sansevieria Maes Collection</title>
+
+    
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">SANSEVIERIA COLLECTION</h2>
+            </div>
+
+
+
+
+        </div> 
+        <div class="content">
+            <h1>COLLECTION OF <br><span>LIFE</span> <br>OFFERS</h1>
+            <p class="par">WELCOME to SANSEVIERIA COLLECTION! 
+                Your're<br>
+                looking for oxygen in your houses right? <br>You are in the right place, start exploring our</br>
+                website to see our services and products.
+            </p>
+
+                <button class="btn"><a href="startbut.html">START</a></button>
+
+                
+                <div class="form"> 
+                    <h2>CREATE HERE!</h2>
+                    
+                    
+                    <button type="button" class="collapsible">HEY, CLICK ME TWICE!</button>
+                    <div class="content">
+                    <p style="font-size: 26px;">Create an account in<br> 
+                        advance for you to explore<br> our shop
+                        more freely.</p>
+                        </div>
+
+                    <p class="link">Create Here<br>
+                    <a href="signup.html">Sign up</a></p>
+                    <p class="liw">Log in with</p>
+
+                    
+                    <div class="icons">
+                        <a href="facebook.html"><ion-icon name="logo-facebook"></ion-icon></a>
+                       
+                        
+                        
+                        <a href="google.html"><ion-icon name="logo-google"></ion-icon></a>
+                        
+                    </div>
+
+                </div>
+                    </div>
+                </div>
+                <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+                <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+                    
+                    for (i = 0; i < coll.length; i++) {
+                      coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                          content.style.display = "none";
+                        } else {
+                          content.style.display = "block";
+                        }
+                      });
+                    }
+                    </script>
+        </div>
+    </div>
+
+    <footer>
+        <h3 style="text-align: center; color: #35170e;">&trade;Sansevieria Maes Collection</h3>
+    </footer>
+
+        
+</body>
+</html>

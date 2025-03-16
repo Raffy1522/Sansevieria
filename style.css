@@ -1,0 +1,257 @@
+/* importing google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Port+Lligat+Slab&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Port Lligat Slab", serif;
+}
+
+.main{
+    width: 100%;
+    background-color: #fa2f2f;
+    background-image: url('https://img.freepik.com/free-photo/background-with-simple-white-walls-plant_23-2151020019.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #667251;
+    font-size: 35px;
+    font-family: Serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+    color: #667251;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #a05208;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #7d6d60;
+}
+
+
+
+
+
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #80d28a;
+    border: 2px solid #add698;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #bd2121;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #2d0909;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .btn{
+    width: 160px;
+    height: 40px;
+    background: #ea9310;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .btn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.btn:hover{
+    background-color: #fad11c;
+}
+
+.content span{
+    color: #816a58;
+    font-size: 65px
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: #6e5704;
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #618d63;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #dfeee0;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+.collapsible {
+    background-color: #643812;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #e58633;
+  }
+
+
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #58adfd;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #131313;
+}
+.icons ion-icon{
+    color: #f9efef;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #e9e9ef;
+}
+
+
+
+
+
+
+
+
+
+
+
+    
